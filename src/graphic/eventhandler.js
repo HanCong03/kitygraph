@@ -104,6 +104,8 @@ define( function ( require, exports, module ) {
 
                 Utils.each( USER_HANDLER_CACHE[ eid ][ type ], function ( fn ) {
 
+                    var result;
+
                     if ( fn ) {
 
                         result = fn.call( targetObject, e );
